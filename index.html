@@ -1,0 +1,40 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="https://i.postimg.cc/MKdhy06Z/family.jpg">
+    <h3 id="one"> Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "1. My Father (Mustafa )",
+   "2. My Mother (Sameera )",
+   "3. My Sister (Khadijah)",
+   "4. Me (Umaima)",
+   "5. My Brother(Omar)",
+   "6. My Small-Sister(Saffiyah)",
+   ];
+ var images=[
+   "daddy.jpg",
+   "mom.png",
+   "sis.jpg",
+   "me.jpg",
+   "bro.png",
+   "smallsis.jpg",
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==6){
+     i=0;
+   }}
+  </script>
+  <script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
